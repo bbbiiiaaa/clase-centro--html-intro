@@ -1,0 +1,40 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body, p, ul, ol{
+  margin: 0;
+}
+
+.ancho-variable{
+  width: 80%;
+  margin: 50px 100px 70px 30px;
+  background-color: blue;
+}
+
+.ancho-fijo{
+  width: 700px;
+  padding: 50px 100px 70px 30px;
+  background-color: red;
+}
+
+.ancho-responsivo{
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: green;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.grid p, .grid ul{
+  background-color: yellow;
+}
+p{
+  padding-bottom: 10px;
+}
