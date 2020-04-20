@@ -1,0 +1,67 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body{
+  margin: 0;
+}
+
+.ancho-variable{
+  width: 70%;
+  margin: 50px 100px 70px 30px;
+  background-color: yellow;
+}
+
+.ancho-fijo{
+  width: 600px;
+  padding: 50px 100px 70px 30px;
+  background-color: red;
+}
+
+.ancho-responsivo{
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: orange;
+  display: block;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 15px;
+}
+
+
+.tag-img{
+  width: 100%;
+}
+
+.bg-img{
+  height: 100px;
+  /* background-color: yellow; */
+  background-size: cover;
+  background-position: center;
+}
+
+
+.gato1{
+    background-image: url('http://placekitten.com/g/700/400');
+}
+
+.gato2{
+    background-image: url('http://placekitten.com/g/250/400');
+}
+
+.tag-img-obj{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 440px) {
+  .grid{
+    grid-template-columns: 1fr;
+  }
+}

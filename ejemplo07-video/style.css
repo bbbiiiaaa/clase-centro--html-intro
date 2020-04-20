@@ -1,0 +1,29 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body{
+  margin: 0;
+}
+
+.ancho-responsivo{
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: orange;
+  display: block;
+}
+
+.video-incrustado{
+  width: 100%;
+  height: 300px;
+}
+
+.tag-img{
+  width: 100%;
+}
+
+.tag-video{
+  width: 100%;
+}
