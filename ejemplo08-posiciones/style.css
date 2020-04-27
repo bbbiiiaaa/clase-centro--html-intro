@@ -1,0 +1,136 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body, ul, ol, p, h1, h2, h3, h4, h5, h6{
+  margin: 0;
+}
+
+code{
+  font-weight: bold;
+}
+
+p{
+  padding-bottom: 1em;
+}
+
+.ancho-responsivo{
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: yellow;
+  display: block;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 15px;
+}
+
+.tag-img{
+  display: block;
+  width: 100%;
+}
+
+.tag-img-obj{
+  height: 200px;
+  object-fit: cover;
+}
+
+.bg-img{
+  height: 200px;
+  /*background-color: yellow;*/
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+
+.gato1{
+    background-image: url('http://placekitten.com/g/700/400');
+}
+
+.gato2{
+    background-image: url('http://placekitten.com/g/250/400');
+}
+/*http://placekitten.com/g/700/400*/
+
+
+
+/*
+    POSICIÓN FIJA
+*/
+
+.menu{
+  /* Estos propiedades funcionan en combinación para para posición del menú */
+  position: fixed;
+  top: calc(50vh - 40px);
+  right: 100px;
+  z-index: 1;
+
+  background: black;
+
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+
+  padding-top: 28px;
+  text-align: center;
+}
+
+.menu--link{
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+
+.menu--link:hover{
+  text-decoration: underline;
+}
+
+
+/*
+    POSICIÓN ABSOLUTA
+*/
+
+
+.grid-element{
+  /*
+  Prueba poner la posición relativa en este elemento para ver qué pasa.
+  position: relative;*/
+}
+
+.img-wrapper{
+  /* la posición relativa sirve para usar este elemento para posicionar el elemento con posición absoluta  */
+  position: relative;
+}
+
+.img-pie{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 7px;
+
+  /* Este elemento tendrá su posición en relación al primer antecesor que tenga posición relativa. */
+  position: absolute;
+
+  /* display: none; esconde todos los elemtos para sólo mosstrar */
+}
+
+.img-wrapper:hover .img-pie{
+  display: block;
+}
+
+.img-pie-credito{
+  /* funciona en combinación con la posición aboluta */
+  bottom: 0;
+}
+
+.img-pie-copyright{
+  transform: rotate(-90deg);
+  /* cambia el punto de retación del elemento */
+  transform-origin: 0% 0%;
+  width: 200px;
+}
