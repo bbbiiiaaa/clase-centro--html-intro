@@ -37,7 +37,8 @@ body{
 
 .artist--layout{
   display: grid;
-  grid-template: repeat(12, 1fr) / repeat(6, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   height: calc(100vh - 50px);
 }
 
@@ -53,8 +54,9 @@ body{
 }
 
 .artist--name{
-  grid-column: 4 / span 7;
+  grid-column: 5 / span 7;
   grid-row: 3;
+  padding-left: 15px;
   color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
