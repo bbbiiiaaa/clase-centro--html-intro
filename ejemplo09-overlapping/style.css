@@ -7,11 +7,9 @@
 html, body, ul, ol, p, h1, h2, h3, h4, h5, h6{
   margin: 0;
 }
-
 body{
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
 }
-
 .initial--layout{
   display: grid;
   grid-template-rows: 50px 1fr;
