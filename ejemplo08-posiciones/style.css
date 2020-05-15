@@ -116,11 +116,15 @@ p{
   /* Este elemento tendrá su posición en relación al primer antecesor que tenga posición relativa. */
   position: absolute;
 
-  /* display: none; esconde todos los elemtos para sólo mosstrar */
+  display: none; /* esconde todos los elemtos para sólo mosstrar */
 }
-
+/*
+  CSS funciona seleccionando elementos y aplicándoles estilos
+  en la siguiente linea se seleccionan únicamente la clase img-wrapper en la que el mouse haga hover
+  Y sobre dentro de ese elemento selecciona la clase img-pie
+*/
 .img-wrapper:hover .img-pie{
-  display: block;
+  display: block; /* con display:block mostramos el elemento */
 }
 
 .img-pie-credito{
