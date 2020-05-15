@@ -1,0 +1,80 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body{
+  margin: 0;
+  font-size: 18px;
+}
+
+.ancho-responsivo{
+  max-width: 820px;
+  margin: 0 auto;
+  background-color: orange;
+  display: block;
+  padding: 50px;
+}
+
+.grid{
+  display: grid;
+  grid-column-gap: 15px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tag-img{
+  width: 100%;
+}
+
+.bg-img{
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+}
+
+.gato1{
+    background-image: url('http://placekitten.com/g/700/400');
+}
+
+.gato2{
+    background-image: url('http://placekitten.com/g/250/400');
+}
+
+/*
+ * Los media queries más sencillos se escriben así:
+ * Lo que significan las siguientes líneas es
+ * Para cualquier dispositivo que tenga pantalla y que mida 680px de ancho como máximo,
+ * (es decir de 0 a 680px) agrega los siguientes estilos.
+ */
+
+@media only screen and (max-width: 680px) {
+  .grid{
+    grid-template-columns: 1fr 1fr;
+  }
+  .ancho-responsivo{
+    padding: 20px;
+
+    /*
+    El fondo de color cambia a blanco cuando la pantalla mide 680px o menos
+    Y como no hay una propiedad que la sustituya en el breakpoint más chico esta propiedad se manteniene en tamaños de 510px o menos.
+    */
+    background-color: white;
+  }
+}
+
+/*
+ * Recuérden que en CSS las líneas de abajo de sobreescriben a las líneas de arriba
+ * Por eso es IMPORTANTE que los media queries estén acomodados del ancho más grande al más chico.
+ * Por eso en este ejemplo, arriba están los estilos para medidas de 0 - 680px
+ * (es decir de 0 a 680px) agrega los siguientes estilos.
+ */
+
+@media only screen and (max-width: 510px) {
+  .grid{
+    grid-template-columns: 1fr;
+  }
+  .ancho-responsivo{
+    padding: 10px;
+  }
+}
