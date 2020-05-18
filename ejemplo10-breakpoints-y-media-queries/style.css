@@ -56,7 +56,7 @@ html, body{
     padding: 20px;
 
     /*
-    El fonde de color cambia a blanco cuando la pantalla mide 680px o menos
+    El fondo de color cambia a blanco cuando la pantalla mide 680px o menos
     Y como no hay una propiedad que la sustituya en el breakpoint más chico esta propiedad se manteniene en tamaños de 510px o menos.
     */
     background-color: white;
