@@ -1,0 +1,40 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body{
+  margin: 0;
+  font-size: 18px;
+}
+
+.formulario{
+  max-width: 820px;
+  margin: 0 auto;
+  background-color: orange;
+  display: block;
+  padding: 50px;
+  font-size: calc(18px + 1vw);
+}
+
+.formulario--label{
+  display: block;
+}
+.formulario--input{
+  width: 100%;
+  border: 0;
+  border-bottom: solid thin black;
+  background: transparent;
+  margin-bottom: calc(18px + 1vw);
+}
+
+.formulario--input, .formulario--input::placeholder{
+  font-size: calc(18px + 1vw);
+}
+
+.formulario--boton{
+  border: thin solid black;
+  background: transparent;
+  font-size: inherit;
+}
